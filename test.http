@@ -1,0 +1,30 @@
+GET http://localhost:3000/api/members
+
+###
+
+POST http://localhost:3000/api/members
+Content-Type: application/json
+
+{
+  "name": "Zake",
+  "team": "Engineering",
+  "position": "Android Developer",
+  "emailAddress": "zake@google.com",
+  "phoneNumber": "123-456-7890",
+  "admissionDate": "2021-01-01",
+  "birthday": "1990-01-01",
+  "profileImage": "profile11.png"
+}
+
+###
+
+PUT http://localhost:3000/api/members/1
+Content-Type: application/json
+
+{
+  "name": "David"
+}
+
+###
+
+DELETE http://localhost:3000/api/members/11
